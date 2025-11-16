@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenEnergy - Solar Power Solutions</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>GreenEnergy Solar</h1>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#features">Features</a>
+                <a href="#signup">Sign Up</a>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero" id="about">
+            <img src="C:\Users\Maria Tariq\OneDrive\Pictures\Screenshots\WhatsApp Image 2025-11-16 at 2.27.11 PM.jpeg" alt="Solar Energy" class="hero-image">
+            <h2>Clean Energy for Everyone</h2>
+            <p>Join us in making the world greener with solar power</p>
+        </section>
+        <!-- Features Section -->
+        <section class="features" id="features">
+            <h2>Why Choose Solar Energy?</h2>
+            <div class="feature-box">
+                <article class="feature">
+                    <h3>Save Money</h3>
+                    <p>Reduce your electricity bills by up to 70% with our solar panels.</p>
+                    <button type="button">Learn More</button>
+                </article>
+
+                <article class="feature">
+                    <h3>Help Environment</h3>
+                    <p>Solar energy is clean and renewable. No pollution, just sunshine!</p>
+                    <button type="button">Learn More</button>
+                </article>
+
+                <article class="feature">
+                    <h3>Easy Installation</h3>
+                    <p>Our team will install your solar panels quickly and professionally.</p>
+                    <button type="button">Learn More</button>
+                </article>
+            </div>
+        </section>
+        <!-- Form Section -->
+        <section class="form-section" id="signup">
+            <div class="form-container">
+                <h2>Sign Up for Free Consultation</h2>
+                <form>
+                    <!-- Text Input -->
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <!-- Email Input -->
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <!-- Dropdown -->
+                    <div class="form-group">
+                        <label for="property">Property Type:</label>
+                        <select id="property" name="property" required>
+                            <option value="">Choose one</option>
+                            <option value="house">House</option>
+                            <option value="apartment">Apartment</option>
+                            <option value="business">Business</option>
+                        </select>
+                    </div>
+                    <!-- Checkboxes -->
+                    <fieldset class="form-group">
+                        <legend>What interests you? (Choose at least one)</legend>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="panels" name="interest" value="panels" required>
+                                <label for="panels">Solar Panels</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="battery" name="interest" value="battery">
+                                <label for="battery">Battery Storage</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="heating" name="interest" value="heating">
+                                <label for="heating">Solar Water Heating</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="newsletter" name="interest" value="newsletter">
+                                <label for="newsletter">Monthly Newsletter</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!-- Radio Buttons -->
+                    <fieldset class="form-group">
+                        <legend>When do you want to install?</legend>
+                        <div class="radio-group">
+                            <div class="radio-item">
+                                <input type="radio" id="soon" name="timeline" value="soon" required>
+                                <label for="soon">Within 1 month</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="later" name="timeline" value="later">
+                                <label for="later">Within 6 months</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="planning" name="timeline" value="planning">
+                                <label for="planning">Just planning ahead</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!-- Textarea -->
+                    <div class="form-group">
+                        <label for="message">Additional Questions:</label>
+                        <textarea id="message" name="message" placeholder="Tell us about your property..."></textarea>
+                    </div>
+                    <!-- Submit Button -->
+                    <button type="submit" class="submit-button">Submit Form</button>
+                </form>
+            </div>
+            <!-- Expandable Info Box -->
+            <div class="info-box">
+                <input type="checkbox" id="toggle1" class="info-toggle">
+                <label for="toggle1" class="info-header">Click here: What happens after I submit?</label>
+                <div class="info-content">
+                    <p>After you submit the form, our team will contact you within 24 hours to schedule a free consultation at your property.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 GreenEnergy Solar. All rights reserved.</p>
+            <p>Contact: Maria Tariq | Phone: 0300-1680844</p>
+        </footer>
+    </div>
+</body>
+</html>
+/* Basic CSS Variables */
+     :root {
+        --green: #28a745;
+        --dark-green: #1e7e34;
+        --light-gray: #f4f4f4;
+        --dark-gray: #333;
+        --white: #ffffff;
+     }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: var(--dark-gray);
+    }
+
+    /*Grid*/
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    /*Header*/
+    header {
+        background-color: var(--dark-gray);
+        color: var(--white);
+        padding: 20px;
+        text-align: center;        
+    }
+    header h1 {
+        font-size: 28px;
+    }
+    nav {
+         margin-top: 15px;
+    }
+    nav a {
+        color: var(--white);
+        text-decoration: none;
+        padding: 10px 20px;
+        margin: 0 5px;
+    }
+    nav a:hover {
+        background-color: var(--green);
+    }
+    nav a:focus {
+        outline: 2px solid var(--white);
+        background-color: var(--green);
+    }
+    /*Hero Section*/
+    .hero {
+        background-color: var(--green);
+        color: var(--white);
+        padding: 60px 20px;
+        text-align: center;
+    }
+    .hero h2 {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+    .hero p {
+        font-size: 18px;
+    }
+    .hero-image {
+        width: 200px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.3s;
+    }
+    .hero-image:hover {
+    transform: scale(1.05);
+    }
+    /*Features Section*/
+    .features {
+        padding: 40px 20px;
+        background-color: var(--white);
+    }
+    .features h2 {
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    /*Flexbox for Features*/
+    .feature-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .feature {
+        background-color: var(--light-gray);
+        padding: 30px;
+        border: 2px solid var(--green);
+        width: 280px;
+        text-align: center;
+    }
+    .feature h3 {
+        margin-bottom: 10px;
+        color: var(--green);
+    }
+    .feature button {
+        background-color: var(--green);
+        color: var(--white);
+        border: none;
+        padding: 10px 20px;
+        margin-top: 15px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+    .feature button:hover {
+        background-color: var(--dark-green);
+    }
+    .feature button:focus {
+        outline: 3px solid var(--dark-gray);
+    }
+    /*Form Section*/
+    .form-section {
+        padding: 40px 20px;
+        background-color: var(--light-gray);
+    }
+    .form-container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: var(--white);
+        padding: 30px;
+        border: 1px solid #ddd;
+    }
+    .form-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    /*Text Inputs*/
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+    }
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    select:focus,
+    textarea:focus {
+        outline: 2px solid var(--green);
+        border-color: var(--green);
+    }
+    textarea {
+        height: 100px;
+        resize: vertical;
+    }
+    /*Checkbox*/
+    .checkbox-group {
+        margin-top: 10px;
+    }
+    .checkbox-item {
+        margin-bottom: 10px;
+    }
+    input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+        margin-right: 8px;
+        cursor: pointer;
+    }
+    input[type="checkbox"]:focus {
+        outline: 2px solid var(--green);
+    }
+    /*Radio Button*/
+    .radio-group {
+        margin-top: 10px;
+    }
+    .radio-item {
+        margin-bottom: 10px;
+    }
+    input[type="radio"] {
+        width: 18px;
+        height: 18px;
+        margin-right: 8px;
+        cursor: pointer;
+    }
+    input[type="radio"]:focus {
+        outline: 2px solid var(--green);
+    }
+    /*Submit Button*/
+    .submit-button {
+        width: 100%;
+        padding: 15px;
+        background-color: var(--green);
+        color: var(--white);
+        border: none;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    .submit-button:hover {
+        background-color: var(--dark-green);
+    }
+    .submit-button:focus {
+        outline: 3px solid var(--dark-gray);
+    }
+    /*info box*/
+    .info-box {
+        max-width: 600px;
+        margin: 30px auto;
+        border: 2px solid var(--green);
+    }
+    .info-toggle {
+        display: none;
+    }
+    .info-header {
+        background-color: var(--green);
+        color: var(--white);
+        padding: 15px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    .info-header:hover {
+        background-color: var(--dark-green);
+    }
+    .info-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s;
+        background-color: var(--white);
+    }
+    .info-toggle:checked + .info-header + .info-content {
+        max-height: 200px;
+        padding: 15px;
+    }
+    /*Footer*/
+    footer {
+        background-color: var(--dark-gray);
+        color: var(--white);
+        text-align: center;
+        padding: 20px;
+    }
+    /*Tablet*/
+    @media (max-width: 768px) {
+        .hero h2 {
+            font-size: 26px;
+        }
+        .feature-box {
+            flex-direction: column;
+            align-items: center;
+        }
+        .feature {
+            width: 100%;
+            max-width: 400px;
+        }
+    }
+    /*Mobile*/
+    @media (max-width: 480px) {
+        header h1 {
+            font-size: 22px;
+        }
+        nav a {
+            display: block;
+            margin: 5px 0;
+        }
+        .hero h2 {
+            font-size: 24px;
+        }
+        .hero p {
+            font-size: 16px;
+        }
+        .form-container {
+        padding: 20px;
+        }
+    }
