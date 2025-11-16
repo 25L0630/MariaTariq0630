@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenEnergy - Solar Power Solutions</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>GreenEnergy Solar</h1>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#features">Features</a>
+                <a href="#signup">Sign Up</a>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero" id="about">
+            <img src="C:\Users\Maria Tariq\OneDrive\Pictures\Screenshots\WhatsApp Image 2025-11-16 at 2.27.11 PM.jpeg" alt="Solar Energy" class="hero-image">
+            <h2>Clean Energy for Everyone</h2>
+            <p>Join us in making the world greener with solar power</p>
+        </section>
+        <!-- Features Section -->
+        <section class="features" id="features">
+            <h2>Why Choose Solar Energy?</h2>
+            <div class="feature-box">
+                <article class="feature">
+                    <h3>Save Money</h3>
+                    <p>Reduce your electricity bills by up to 70% with our solar panels.</p>
+                    <button type="button">Learn More</button>
+                </article>
+
+                <article class="feature">
+                    <h3>Help Environment</h3>
+                    <p>Solar energy is clean and renewable. No pollution, just sunshine!</p>
+                    <button type="button">Learn More</button>
+                </article>
+
+                <article class="feature">
+                    <h3>Easy Installation</h3>
+                    <p>Our team will install your solar panels quickly and professionally.</p>
+                    <button type="button">Learn More</button>
+                </article>
+            </div>
+        </section>
+        <!-- Form Section -->
+        <section class="form-section" id="signup">
+            <div class="form-container">
+                <h2>Sign Up for Free Consultation</h2>
+                <form>
+                    <!-- Text Input -->
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <!-- Email Input -->
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <!-- Dropdown -->
+                    <div class="form-group">
+                        <label for="property">Property Type:</label>
+                        <select id="property" name="property" required>
+                            <option value="">Choose one</option>
+                            <option value="house">House</option>
+                            <option value="apartment">Apartment</option>
+                            <option value="business">Business</option>
+                        </select>
+                    </div>
+                    <!-- Checkboxes -->
+                    <fieldset class="form-group">
+                        <legend>What interests you? (Choose at least one)</legend>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="panels" name="interest" value="panels" required>
+                                <label for="panels">Solar Panels</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="battery" name="interest" value="battery">
+                                <label for="battery">Battery Storage</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="heating" name="interest" value="heating">
+                                <label for="heating">Solar Water Heating</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="newsletter" name="interest" value="newsletter">
+                                <label for="newsletter">Monthly Newsletter</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!-- Radio Buttons -->
+                    <fieldset class="form-group">
+                        <legend>When do you want to install?</legend>
+                        <div class="radio-group">
+                            <div class="radio-item">
+                                <input type="radio" id="soon" name="timeline" value="soon" required>
+                                <label for="soon">Within 1 month</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="later" name="timeline" value="later">
+                                <label for="later">Within 6 months</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="planning" name="timeline" value="planning">
+                                <label for="planning">Just planning ahead</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!-- Textarea -->
+                    <div class="form-group">
+                        <label for="message">Additional Questions:</label>
+                        <textarea id="message" name="message" placeholder="Tell us about your property..."></textarea>
+                    </div>
+                    <!-- Submit Button -->
+                    <button type="submit" class="submit-button">Submit Form</button>
+                </form>
+            </div>
+            <!-- Expandable Info Box -->
+            <div class="info-box">
+                <input type="checkbox" id="toggle1" class="info-toggle">
+                <label for="toggle1" class="info-header">Click here: What happens after I submit?</label>
+                <div class="info-content">
+                    <p>After you submit the form, our team will contact you within 24 hours to schedule a free consultation at your property.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 GreenEnergy Solar. All rights reserved.</p>
+            <p>Contact: Maria Tariq | Phone: 0300-1680844</p>
+        </footer>
+    </div>
+</body>
+</html>
